@@ -1,0 +1,168 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    background: #f3f4f6;
+}
+
+form {
+    width: 520px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+form > h2 {
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #6a00ff;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+legend {
+    padding: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #111;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+.form-field input,
+.form-field textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    /*border-color: #6a00ff;*/
+    outline: 2px dashed #7c3aed;
+}
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.radio-flex {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.option input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.control {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #9ca3af;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* radio checked */
+.option input[type="radio"]:checked + .control {
+    border-color: #6a00ff;
+}
+
+.option input[type="radio"]:checked + .control::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #6a00ff;
+    border-radius: 50%;
+}
+
+/* checkbox */
+.option input[type="checkbox"] + .control {
+    border-radius: 4px;
+}
+
+.option input[type="checkbox"]:checked + .control {
+    background-color: #6a00ff;
+    background-image: url('https://practicetasks.github.io/css/img/input/check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #6a00ff;
+}
+.option input:focus + .control  {
+    outline: 2px dashed #7c3aed;
+}
+
+textarea {
+    background-image: url('https://i.pinimg.com/1200x/99/49/5b/99495b8adeacd4a61dd0ce6220fbd4a0.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    border : 1px solid #888;
+    min-height: 120px;
+    max-height: 240px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #6a00ff, #7c3aed);
+    /*background: #2A7B9B;*/
+    /*background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(199, 87, 199, 1) 61%, rgba(237, 221, 83, 1) 100%);*/
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+button:focus {
+    outline: 2px dashed #7c3aed;
+    /*box-shadow: 0 0 0 5px rgba(106, 0, 255, 0.5);*/
+}

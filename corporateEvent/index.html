@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corporate Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="../index.html" class="back">← Назад</a>
+<form action="" class="card">
+    <header class="form-header">
+        <h2>Corporate Event</h2>
+        <p>Register your company for our exclusive business summit</p>
+    </header>
+    <div class="form-body">
+        <div class="grid">
+            <div class="form-field">
+                <input id="company" name="name" type="text" placeholder="" required>
+                <label for="company">Company Name <span>*</span></label>
+            </div>
+
+            <div class="form-field">
+                <select id="department" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
+                <label for="department">Department <span>*</span></label>
+            </div>
+
+            <div class="form-field">
+                <input id="contact" type="text" placeholder=" " required />
+                <label for="contact">Contact Person <span>*</span></label>
+            </div>
+
+            <div class="form-field">
+                <input id="email" type="email" placeholder=" " required />
+                <label for="email">Email Address <span>*</span></label>
+            </div>
+
+            <div class="form-field">
+                <input id="phone" type="tel" placeholder=" " required />
+                <label for="phone">Phone Number <span>*</span></label>
+            </div>
+
+            <div class="form-field">
+                <input id="tax" type="text" placeholder=" " required />
+                <label for="tax">Company Tax ID <span>*</span></label>
+            </div>
+            <div class="form-field full">
+                <textarea id="about" name="about" placeholder=" " required></textarea>
+                <label for="about">Billing Address <span>*</span></label>
+
+            </div>
+        </div>
+        <button type="submit">Register company</button>
+    </div>
+</form>
+</body>
+</html>

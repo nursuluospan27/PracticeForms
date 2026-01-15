@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="../index.html" class="back">← Назад</a>
+<form action="">
+    <h2>Анкета разработчика</h2>
+    <div class="form-field">
+        <label for="name">Как вас зовут?</label>
+        <input id="name" name="name" type="text" placeholder="Введите ваше имя">
+    </div>
+
+    <fieldset>
+        <legend>Какой ваш основной язык программирования?</legend>
+        <label class="option"><input type="radio" name="language" value="js"><span class="control"></span>JavaScript/TypeScript</label>
+        <label class="option"><input type="radio" name="language" value="Python"><span class="control"></span>Python</label>
+        <label class="option"><input type="radio" name="language" value="Java"><span class="control"></span>Java</label>
+        <label class="option"><input type="radio" name="language" value="Go" ><span class="control"></span>Go</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Какие фреймворки вы использовали?</legend>
+        <div class="checkbox-grid">
+            <label class="option"><input type="checkbox" name="framework" value="React" ><span class="control"></span>React</label>
+            <label class="option"><input type="checkbox" name="framework" value="Vue.js" ><span class="control"></span>Vue.js</label>
+            <label class="option"><input type="checkbox" name="framework" value="Angular" ><span class="control"></span>Angular</label>
+            <label class="option"><input type="checkbox" name="framework" value="Django" ><span class="control"></span>Django</label>
+            <label class="option"><input type="checkbox" name="framework" value="Spring Boot" ><span class="control"></span>Spring Boot</label>
+            <label class="option"><input type="checkbox" name="framework" value="Svelte" ><span class="control"></span>Svelte</label>
+        </div>
+        </fieldset>
+
+    <fieldset>
+        <legend>Вы работаете удаленно?</legend>
+        <div class="radio-flex">
+            <label class="option"><input type="radio" name="remote" value="yes"><span class="control"></span> Да</label>
+            <label class="option"><input type="radio" name="remote" value="no"><span class="control"></span> Нет</label>
+        </div>
+        </fieldset>
+
+    <div class="form-field">
+        <label for="about">Расскажите немного о себе</label>
+        <textarea id="about" name="about" placeholder="Ваши хобби, интересы..."></textarea>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
